@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        * {box-sizing: border-box;}
+
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(https://cdn.pixabay.com/photo/2017/02/18/01/26/background-2076334_1280.jpg);
+            background-size: cover;
+            height: 100%;
+
+
+        }
+
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+        }
+        @media screen and (max-width: 650px) {
+            .nav,  .footer, .para1, .image, .container-fluid, .para0{
+                width: 100%;
+                display: block;
+                flex-direction: column;
+            }
+        }
+
+
+        .container-fluid{
+            background-color: black;
+        }
+
+        .image {
+            padding-left: 25px;
+            width: 90%;
+
+        }
+        .al{
+            display: flex;
+            justify-content: normal;
+
+        }
+        .para1 {
+            position: relative;
+            padding-left: 25px;
+            width: 90%;
+        }
+.para2{
+    outline: 2px solid;
+    padding-left: 5px;
+}
+        .para0 {
+            position: relative;
+            padding-left: 25px;
+            width: 90%;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Python basics and Pylint</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">The History of Internet</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li  class="active"><a href="index.html">Home</a></li>
+            <li><a href="internet_search.html">Internet Search</a></li>
+            <li><a href="dotcom_bubble.html">Dot Com Bubble</a></li>
+            <li><a href="browser_wars.html">Browser Wars</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Articles<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="article_1.html">Python basics and Pylint</a></li>
+                    <li><a href="article_2.html">AAA Testing</a></li>
+                    <li><a href="article_3.html">OOPs in Python</a></li>
+                    <li><a href="article_4.html">Separation of Concern</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+<div class="para0">
+    <h1>Introduction to Python, A beginners guide</h1>
+</div>
+
+<div class="al">
+    <img class="image" src="https://i.ibb.co/c8GTjkD/8-steps-to-master-python-programming-for-data-science-2.jpg" alt="IOT">
+</div>
+<br>
+<div class="para1">
+
+    <p style="font-size:19px">
+        Python has become one of the most popular programming languages in the world in recent years.
+        It's used in everything from machine learning to building websites and software testing.
+        It can be used by developers and non-developers alike.
+        There are many languages out there, so what makes Python such a popular choice? The answer is its flexibility and ease of use
+        Python reads like executable Pseudocode, which makes it easier to understand and implement.
+        There are multiple paradigms that are accessible to Python developers, including the popular object-oriented programming.
+    </p>
+
+    <p style="font-size:19px">
+        Before learning any programming language, we should familiarise ourselves with the important features of
+        Object-oriented programming, this will help us to write code more efficiently and easily.
+        <br>
+    </p>
+
+    <div class="para2">
+    <p style="font-size:17px">
+        <b>Factory in OOP</b><br>
+        Factory Method is a creation design pattern used to create concrete implementations of a common interface.
+        It separates the process of creating an object from the code that depends on the interface of the object.
+        <br><br>
+        <b>Instantiation</b><br>
+        In OOP (object-oriented programming), a class of object may be defined. All objects of this class have a certain
+        set of properties (associated variables), accessories (ways to access those variables), and methods (functions).
+        An instance of that object may then be declared, giving it a unique, named identity so that it may be used in the program.
+        This process is called "instantiation."
+        <br><br>
+        <b>Object</b><br>
+        An instance of a particular class. In general, any number of objects may be constructed from a class definition.
+        The class to which an object belongs defines the general characteristics of all instances of that class.
+        Within those characteristics, an object will behave according to the current state of its attributes and environment.
+        <br><br>
+        <b>Class</b><br>
+        A programming language concept that allows data and methods to be grouped together. The class concept is fundamental
+        to the notion of an object-oriented programming language. The methods of a class define the set of permitted operations
+        on the class's data (its attributes). This close tie between data and operations means that an instance of a class -
+        an object - is responsible for responding to messages received via its defining class's methods.
+        <br><br>
+        <b>Namespace</b><br>
+        The area of a program in which particular identifiers are visible. Java uses packages to provide namespaces, and its
+        visibility rules - private, package, protected, public - variously contain identifiers within namespaces.
+        <br><br>
+        <b>Constructor</b><br>
+        When a class or struct is created, its constructor is called. Constructors have the same name as the class or struct,
+        and they usually initialize the data members of the new object.
+        <br><br>
+        <b>Fixture</b><br>
+        These are functions attached to the tests which run before the test function is executed. Fixtures are a set of
+        resources that have to be set up before and cleaned up once the Selenium test automation execution is completed.
+        <br><br>
+        <b>Type Hint</b><br>
+        Type hinting is a formal solution to statically indicate the type of a value within your Python code.
+        <br><br>
+        <b>Type Cast</b><br>
+        Type Casting is a process in which we convert a literal of one type to another.
+        Inbuilt functions' int(), float() and str() shall be used for typecasting.
+        <br><br>
+        <b>Unit test</b><br>
+        Unit Testing in Python. ... Unit testing is a software testing method by which individual units of source
+        code are put under various tests to determine whether they are fit for use.
+        It determines and ascertains the quality of your code
+        <br><br>
+        <b>Static</b><br>
+        Static functions are used to invoke a class code when none of its instance exists( in purer oop languages).
+        Static functions can change static variables. Declaring class properties or methods as static makes them accessible
+        without needing an instantiation of the class
+        <br><br>
+        <b>Class Method</b><br>
+        A class method is one with the static reserved word in its header.
+        Static methods differ from all other methods in that they are not associated with any particular instance of the
+        class to which they belong. They are usually accessed directly via the name of the class in which they are defined.
+        <br><br>
+        <b>Facade</b><br>
+        Facade is a structural design pattern that provides a simplified (but limited) interface to a complex system of classes,
+        library or framework. While Facade decreases the overall complexity of the application, it also helps to move
+        unwanted dependencies to one place.
+        <br><br>
+        <b>Design Patterns</b><br>
+        A design pattern provides a general reusable solution for the common problems that occur in software design.
+        The pattern typically shows relationships and interactions between classes or objects. The idea is to speed up the
+        development process by providing well-tested, proven development/design paradigms.
+        <br><br>
+        <b>Method</b><br>
+        The part of a class definition that implements some of the behavior of objects of the class.
+        The body of the method contains declarations of local variables and statements to implement the behavior.
+        A method receives input via its arguments, if any, and may return a result if it has not been declared as void.
+        <br><br>
+        <b>Property</b><br>
+        The property() method in Python provides an interface to instance attributes. It encapsulates instance attributes and
+        provides a property, same as Java and C#. The property() method takes the get, set and delete methods as arguments and
+        returns an object of the property class
+    </p>
+
+        <p style="font-size:19px"><br>
+        To learn about OOPs concept such as encapsulation,abstraction,polymorphism or inheritance, refer <a href="article_3.html">Article 3</a>
+        </p>
+    </div>
+<br>
+    <h3>Pylint as a linter</h3>
+    <p style="font-size:19px">
+        One of the greatest tools one must know when coding in python is <b>Pylint</b>. Pylint is a Python static code analysis tool that looks
+        for programming errors, helps enforce a coding standard, sniffs for code smells, and offers simple refactoring suggestions.
+        It’s highly configurable, having special pragmas to control its errors and warnings from within your code,
+        as well as from an extensive configuration file. It is also possible to write your own plugins for adding your
+        own checks or for extending pylint in one way or another. As Pylint is “Static”, it means that
+        it won’t execute your code, it will just parse it to find mistakes or things that do not respect a given coding style.
+
+        <br><br>
+        Pylint messages fall into the categories in the following table, It is important that we understand the different categories of
+        the errors.
+        The nice thing about pylint output is that the lint is labeled by category.
+        You can choose to ignore certain errors if you don’t care to adhere to a specific convention as well.
+    </p>
+<br>
+    <table class="table table-striped" style="font-size:18px">
+        <thead>
+        <tr>
+            <th>Pylint category</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Convention (C)</td>
+            <td>[C]onvention for coding standard violation</td>
+
+        </tr>
+        <tr>
+            <td>Refactor (R)</td>
+            <td>[R]efactor for a “good practice” metric violation</td>
+
+        </tr>
+        <tr>
+            <td>Warning (W)</td>
+            <td>[W]arning for stylistic problems, or minor programming issues</td>
+
+        </tr>
+        <tr>
+            <td>Error (E)</td>
+            <td>[E]rror for important programming issues (i.e. most probably bug)</td>
+
+        </tr>
+        <tr>
+            <td>Fatal (F)</td>
+            <td>[F]atal for errors which prevented further processing</td>
+
+        </tr>
+        </tbody>
+    </table>
+
+<br>
+
+    <p style="font-size:19px">
+        When pylint is run on <a href="https://github.com/madhurima309/calc2">this</a> piece of code,
+        we get the below, from the table above, we can see that they are Convention (C) and Warning (W)
+    </p>
+</div>
+<div class="al">
+    <img class="image" src="https://i.ibb.co/wC8B8dQ/Error.png" alt="IOT">
+</div>
+<br>
+<div class="para0">
+    <p style="font-size:19px">
+        This basically means that line 11 violates a convention ‘C’.
+        It’s telling us that we should have a docstring.
+        This is Correct, a docstring is required, but what if we didn’t fully understand what rule was violated.
+        Knowing only that a convention is violated isn’t much help if we are a newbie.
+        Another information here is the message between the parenthesis, “missing-docstring”.
+        <br>
+        Once we understand the message in the parenthesis, we can easily correct our python code to eliminate the issues.
+        <br><br>
+        However, there are other errors thrown by pylint which are not necessarily a code error on our part such as the Refactor (R)
+    </p>
+</div>
+<div class="al">
+    <img class="image" src="https://i.ibb.co/JFgMSnh/toofew.png" alt="error">
+</div>
+<br>
+<div class="para0">
+    <p style="font-size:19px">
+        From a (pure) object-oriented programming perspective, a class (and its instances)
+        shall bundle data (the object’s attributes) and behavior (its methods).
+        If a class does not expose any public methods, this rule is violated.
+        In Python, the correct amount of public methods should be more than 5 for pylint to not throw this error,
+        thus there are cases where the pylint error thrown is not essentially correct or needed.
+
+        <br> <br>
+        In Pylint have an option of suppressing pylint errors, if we feel that we do not wish to follow the code style
+        pylint is designed for or if we have errors such as above
+    </p>
+</div>
+<div class="al">
+    <img class="image" src="https://i.ibb.co/dBZZ5Y6/supress.png" alt="suppress">
+</div>
+<br>
+<div class="para0">
+    <p style="font-size:19px">
+        What Pylint says is not to be taken as gospel and Pylint isn't smarter than you are: it may warn you about things
+        that you have conscientiously done.
+        Pylint tries hard to report as few false positives as possible for errors, but it may be too verbose with warnings.
+        That's for example because it tries to detect things that may be dangerous in a context, but are not in others, or
+        because it checks for some things that you don't care about. Generally, we shouldn't expect Pylint to be totally quiet
+        about the code
+        <br># pylint: disable=wildcard-import, method-hidden
+        <br># pylint: enable=too-many-lines
+        <br># pylint: skip-file
+        <br>The above highlighted method can be used to suppress pylint errors that are of no consequence. We need to use the above syntax of
+        #pylint followed by the messages that we are trying to suppress. The code reference for this tutorial can be found
+        <a href="https://github.com/madhurima309/calc2">here</a>
+    </p>
+</div>
+
+<div class ="para0"><br>
+    <p1 style="font-size:21px">
+        <b>The complete code can be accessed on <a href="https://github.com/madhurima309/calc2">Calculator Github</a></b>
+    </p1>
+</div><br><br>
+
+<div class="footer">
+
+    <p> <a href="https://validator.w3.org/">W3C Validator</a><br>
+        &copy;<a href="https://github.com/madhurima309/history-of-internet">Madhurima Github</a>
+    </p>
+</div>
+
+</body>
+</html>
